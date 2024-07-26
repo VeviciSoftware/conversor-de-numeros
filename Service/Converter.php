@@ -59,9 +59,10 @@ class Converter {
         return $result;
     }
 
-    //Ao executar o teste unitário, na função testInvalidRomanNumerals, o teste falha. Isso ocorre porque precisamos
+    //Ao executar o teste unitário, na função testInvalidRomanNumerals, o teste falhava. Isso ocorria porque precisamos
     //verificar se o número romano é válido. Por exemplo, o número romano IIII não é válido, pois o número 4 é representado
-    //por IV. IA ajudou aqui porque Deus que me livre fazer isso na mão.
+    //por IV. A ordem dos caracteres romanos também influencia. IA ajudou aqui porque Deus que me livre fazer isso na mão. 
+    //Para fins de consulta, adicionei informações sobre a função regex no README.md.
     private function isValidRoman($roman) {
         $pattern = '/^(?=[MDCLXVI])M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$/';
         return preg_match($pattern, $roman) === 1;

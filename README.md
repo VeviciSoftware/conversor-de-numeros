@@ -16,7 +16,11 @@ Para executar o projeto, utilize: caminho/para/arquivo/converter-numeros> php ma
 
 ## Execução dos testes
 
-Para executar os testes do projeto, utilize: vendor\bin\phpunit --colors tests
+Para executar os testes do projeto, utilize: 
+```sh
+vendor\bin\phpunit --colors tests
+```
+
 
 ## Pontos que valem destaque
 
