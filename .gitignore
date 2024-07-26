@@ -1,0 +1,16 @@
+# Composer
+/vendor/
+composer.lock
+
+# PHPUnit
+/phpunit.xml
+/phpunit.xml.dist
+
+# Sistema Operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos temporários e de cache
+*.log
+*.cache
+*.tmp
